@@ -1,0 +1,48 @@
+2022-05-30T15:48:37.996Z [BankAPI] info: POST /cedente - {"cedente_id":1,"cnpj":"12345678000100","nome":"Interludio Educacao Infantil"}
+2022-05-30T15:49:05.437Z [BankAPI] error: POST  - duplicate key value violates unique constraint "cedente_cnpj_idx"
+2022-05-30T15:49:35.782Z [BankAPI] info: GET /cedentes
+2022-05-30T15:49:39.773Z [BankAPI] info: GET /cedente/1
+2022-05-30T15:50:09.774Z [BankAPI] info: PUT /cedente - {"cedente_id":1,"cnpj":"12345678000100","nome":"Interludio Educacao Infantil LTDA"}
+2022-05-30T15:50:15.874Z [BankAPI] info: GET /cedentes
+2022-05-30T15:53:19.755Z [BankAPI] error: POST  - date/time field value out of range: "30/05/2022"
+2022-05-30T15:53:54.137Z [BankAPI] error: POST  - insert or update on table "pagamentos" violates foreign key constraint "pagamento_fk"
+2022-05-30T15:55:57.232Z [BankAPI] info: POST /sacado - {"sacado_id":1,"cpf":"12345678900","nome":"Juca Pai do Joao"}
+2022-05-30T15:56:17.188Z [BankAPI] info: PUT /sacado - {"sacado_id":1,"cpf":"12345678900","nome":"Juca Pai do Joao"}
+2022-05-30T15:56:23.730Z [BankAPI] info: GET /sacados
+2022-05-30T15:56:27.386Z [BankAPI] info: GET /sacado/1
+2022-05-30T15:58:16.814Z [BankAPI] error: POST  - Titulo_ID, Sacado_ID, Vencimento e Valor são obrigatórios!
+2022-05-30T15:59:17.548Z [BankAPI] info: POST /titulo - {"titulo_id":1,"cedente_id":1,"sacado_id":1,"vencimento":"2022-06-10T03:00:00.000Z","valor":"1500"}
+2022-05-30T15:59:42.410Z [BankAPI] info: PUT /titulo - {"titulo_id":1,"cedente_id":1,"sacado_id":1,"vencimento":"2022-06-10T03:00:00.000Z","valor":"1600"}
+2022-05-30T15:59:46.620Z [BankAPI] info: GET /titulos
+2022-05-30T15:59:50.940Z [BankAPI] info: GET /titulo/1
+2022-05-30T16:39:47.304Z [BankAPI] error: POST  - CNPJ e Nome são obrigatórios!
+2022-05-30T16:39:56.195Z [BankAPI] info: GET /cedentes
+2022-05-30T16:40:16.662Z [BankAPI] error: POST  - CNPJ e Nome são obrigatórios!
+2022-05-30T23:08:55.565Z [BankAPI] error: POST  - duplicate key value violates unique constraint "cedente_cnpj_idx"
+2022-05-30T23:09:02.400Z [BankAPI] info: POST /cedente - {"cedente_id":4,"cnpj":"12345678000101","nome":"Interludio Educacao Infantil"}
+2022-05-30T23:09:25.748Z [BankAPI] info: GET /titulos
+2022-05-30T23:09:55.235Z [BankAPI] info: GET /cedentes
+2022-05-30T23:14:34.868Z [BankAPI] info: POST /sacado - {"sacado_id":2,"cpf":"12345678901","nome":"Juca Pai do Jose"}
+2022-05-30T23:14:40.023Z [BankAPI] info: GET /sacados
+2022-05-30T23:14:43.693Z [BankAPI] info: GET /sacado/1
+2022-05-30T23:14:50.139Z [BankAPI] info: GET /sacado/2
+2022-05-30T23:15:07.037Z [BankAPI] info: GET /titulos
+2022-06-18T22:24:22.508Z [BankAPI] info: GET /cedentes
+2022-06-18T22:24:27.277Z [BankAPI] info: GET /cedentes
+2022-06-18T22:24:56.319Z [BankAPI] info: GET /cedentes
+2022-06-18T22:25:10.139Z [BankAPI] info: GET /cedentes
+2022-06-18T22:36:16.833Z [BankAPI] info: GET /sacados
+2022-06-18T22:47:37.144Z [BankAPI] info: GET /sacados
+2022-06-18T22:47:46.413Z [BankAPI] error: DELETE  - update or delete on table "sacados" violates foreign key constraint "titulo_fk_2" on table "titulos"
+2022-06-18T22:47:55.145Z [BankAPI] info: GET /titulos
+2022-06-18T22:48:00.304Z [BankAPI] info: GET /titulos
+2022-06-18T22:48:04.804Z [BankAPI] info: DELETE /titulo - 1
+2022-06-18T22:48:08.230Z [BankAPI] info: GET /titulos
+2022-06-18T22:48:11.463Z [BankAPI] info: GET /sacados
+2022-06-18T22:48:14.160Z [BankAPI] info: DELETE /sacado - 1
+2022-06-18T22:48:18.258Z [BankAPI] info: DELETE /sacado - 2
+2022-06-18T22:48:21.185Z [BankAPI] info: GET /sacados
+2022-06-18T22:48:30.074Z [BankAPI] info: GET /pagamentos
+2022-06-18T22:48:39.838Z [BankAPI] info: GET /cedentes
+2022-06-18T22:48:48.907Z [BankAPI] info: DELETE /cedente - 4
+2022-06-18T22:48:59.140Z [BankAPI] info: GET /cedentes
